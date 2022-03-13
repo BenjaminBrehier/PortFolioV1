@@ -1,0 +1,258 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+::-webkit-scrollbar {
+  width: 0%;
+  background: transparent; /* make scrollbar transparent */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+/* FIST PAGE */
+
+#fiche {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    color: rgb(58, 58, 58);
+    width: 15%;
+    height: 13vw;
+    margin-top: 20%;
+    margin-left: 35%;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 2.5vw;
+    font-family: 'Raleway', sans-serif;
+    transition:transform 2s ; 
+    box-shadow: 3px 3px 0px 0px grey;
+}
+
+#fiche:hover {
+    transform: scale(1.08);
+}
+
+#fiche p {
+    margin-top: 20%;
+    font-size: 1vw;
+}
+
+#presentation {
+  position: absolute;
+  margin-top: 20vh;
+  margin-left: 53%;
+  margin-right: 2%;
+  font-size:  3vw;
+  color: #444;
+}
+
+#presentation strong {
+  color: #7E7E7E;
+}
+
+#left, .slideimg {
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+@media screen and (max-width: 200px) {
+  #presentation {
+    font-size:  4vw;
+  }
+
+  #left {
+    height: 75%;
+    margin-top: 12%;
+  }
+}
+
+#contact {
+  float: right;
+  height: 10vw;
+  margin-top: 80vh;
+  margin-left: 50%;
+
+}
+
+#contact button {
+  width: 20vw;
+  background-color: transparent;
+  border: 0px
+}
+
+#hover {
+  width: 105px;
+  display: none;
+  margin-left: 55%;
+  background-color: rgb(64, 41, 119);
+  color: #3AA1BF;
+  border: 1px solid black;
+  border-radius: 5px;
+  
+}
+
+#contact button:hover + #hover {
+  display: block;
+}
+
+#contact button:hover {
+  cursor: pointer;
+}
+
+#contact button:focus{
+  outline: transparent;
+}
+
+#contact img {
+  position: relative;
+  width: 20%;
+
+}
+
+/* FIN */
+
+.slidershow{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .navigation{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+  .bar{
+    width: 50px;
+    height: 10px;
+    border: 2px solid rgb(62, 172, 206);
+    border-radius: 5px;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  .bar:hover{
+    background: rgb(62, 172, 206);
+  }
+  
+  input[name="r"]{
+      position: absolute;
+      visibility: hidden;
+  }
+  
+  .slides{
+    width: 500%;
+    height: 100%;
+    display: flex;
+  }
+  
+  .slide{
+    width: 20%;
+    transition: 0.6s;
+  }
+  .slide img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .bg {
+    background-color:rgb(62, 172, 206);
+  }
+
+  #r1:checked ~ .s1{
+    margin-left: 0;
+  }
+  #r2:checked ~ .s1{
+    margin-left: -20%;
+  }
+  #r3:checked ~ .s1{
+    margin-left: -40%;
+  }
+  #r4:checked ~ .s1{
+    margin-left: -60%;
+  }
+  #r5:checked ~ .s1{
+    margin-left: -80%;
+  }
+
+
+  .text {
+    -webkit-transform: scale(0.9, 0.9);
+            transform: scale(0.9, 0.9);
+    transition: all 500ms;
+  }
+  
+  .pg-active .text {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  
+  /* Main styles */
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
+  .text {
+    fill: none;
+    stroke-width: 3;
+    stroke-linejoin: round;
+    stroke-dasharray: 70 330;
+    stroke-dashoffset: 0;
+    -webkit-animation: stroke 6s infinite linear;
+    animation: stroke 6s infinite linear;
+  }
+  .text:nth-child(5n + 1) {
+    stroke: #F2385A;
+    -webkit-animation-delay: -1.2s;
+    animation-delay: -1.2s;
+  }
+  .text:nth-child(5n + 2) {
+    stroke: #F5A503;
+    -webkit-animation-delay: -2.4s;
+    animation-delay: -2.4s;
+  }
+  .text:nth-child(5n + 3) {
+    stroke: #E9F1DF;
+    -webkit-animation-delay: -3.6s;
+    animation-delay: -3.6s;
+  }
+  .text:nth-child(5n + 4) {
+    stroke: #56D9CD;
+    -webkit-animation-delay: -4.8s;
+    animation-delay: -4.8s;
+  }
+  .text:nth-child(5n + 5) {
+    stroke: #3AA1BF;
+    -webkit-animation-delay: -6s;
+    animation-delay: -6s;
+  }
+  
+  @-webkit-keyframes stroke {
+    100% {
+      stroke-dashoffset: -400;
+    }
+  }
+  @keyframes stroke {
+    100% {
+      stroke-dashoffset: -400;
+    }
+  }
+  
+  .loader {
+    position : absolute;
+    background-color: black;
+    z-index: 0;
+    top : 0px;
+    left : 0px;
+    height : 100%;
+    width : 100%;
+    background-size: .2em 100%;
+    font: 5em/1 Open Sans, Impact;
+    text-transform: uppercase;
+    margin: 0;
+    }

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html  lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<title>PortFolio Benjamin</title>
+		<link rel="stylesheet" href="styles/styleAnime.css">
+		<link rel="stylesheet" href="styles/style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;900&family=Xanh+Mono&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+
+	</head>
+	<body>
+		<main>
+			<section data-anchor="Page 1">
+				<div class="text">
+					<div id="fiche">
+						<br>
+						<span style="font-weight: bold;" class="txt-rotate" data-period="2000" data-rotate='[ "PortFolio", "Mes projets" ]'></span>
+						<p>Jeune Développeur</p>
+					</div>
+					<img id="left" src="img/altumcode-zE007SNgcdE-unsplash.jpg" width="40%" alt="">
+
+					<p id="presentation">Hey ! Je suis Benjamin Bréhier, étudiant en Informatique (DUT) et voici mon <strong>PortFolio</strong>, j'aime particulièrement programmer... 😊</p>
+
+					<div id="contact">				
+						<button onclick="window.open('https://twitter.com/Exe2Glace', '_blank');"><img src="img/twitter.png" alt="Twitter"></button>
+						<button onclick="copy_function('textCopied')"><img src="img/discord.png" alt="Twitter"></button>
+						<p id="hover">Click to copy</p>		
+						<p id="textCopied" style="display: none;">Exe2Glace#****</p>
+					</div>
+				</div>
+			</section>
+			<section data-anchor="Page 2"><div class="text">
+				<div class="slidershow middle">
+
+					<div class="slides">
+					  <input type="radio" name="r" id="r1" checked>
+					  <input type="radio" name="r" id="r2">
+					  <input type="radio" name="r" id="r3">
+					  <input type="radio" name="r" id="r4">
+					  <div class="slide s1">
+						<a href="#">
+						<div class="loader">
+							<svg viewBox="0 0 600 300">
+								<symbol id="s-text">
+								  <text text-anchor="middle" x="50%" y="50%" dy=".35em">Colress</text>
+								</symbol>
+								<use class="text" xlink:href="#s-text"></use>
+								<use class="text" xlink:href="#s-text"></use>
+								<use class="text" xlink:href="#s-text"></use>
+								<use class="text" xlink:href="#s-text"></use>
+								<use class="text" xlink:href="#s-text"></use>
+							  </svg>
+						</div>
+						</a>
+					  </div>
+					  
+					  <div class="slide">
+						<a href="#">
+							<img class="slideimg" src="img/Sentymental.png" style="z-index: 1;" alt=""></a>
+					  </div>
+					  <div class="slide">
+						<a href="#">
+							<img class="slideimg" src="img/ChoixDeChat.png" style="z-index: 1;" alt=""></a>
+					  </div>
+					  <div class="slide">
+						<a href="#">
+							<img class="slideimg" src="img/TravelAgency.jpg" style="z-index: 1;" alt=""></a>
+					  </div>
+					</div>
+			  
+					<div class="navigation" style="z-index: 2;">
+					  <label for="r1" class="bar" id="first"></label>
+					  <label for="r2" class="bar"></label>
+					  <label for="r3" class="bar"></label>
+					  <label for="r4" class="bar"></label>
+					</div>
+				  </div>
+			</div></section>
+		</main>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.min.js"></script>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+		<script src="scripts/pageable.min.js"></script>
+		<script src="scripts/delay.js"></script>
+		<script src="scripts/script.js"></script>
+	</body>
+</html>
